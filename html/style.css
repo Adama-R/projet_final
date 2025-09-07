@@ -1,0 +1,492 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+:root {
+    --my-color: #ffffff;
+    --my-green-color: #00DFC4;
+    --my-font-size: large;
+    --my-font-weight: bold;
+    --my-screen-width: 100vw;
+    --my-screen-height: 100vh;
+    --my-bacground-color: rgba(255, 255, 255, 255);
+    --my-font-family: sans-serif, Georgia, 'Times New Roma', Times, serif;
+}
+
+/* --------------------- Les éléments commun de cette page --------------------- */
+
+* {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--my-font-family);
+}
+
+header {
+    height: 22.7vh;
+}
+
+#header_aPropos,
+#header_mes_projets,
+#header_mes_competences {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 77.1vh
+}
+
+span {
+    color: var(--my-green-color);
+    font-weight: var(--my-font-weight);
+}
+
+button {
+    font-weight: var(--my-font-weight);
+    color: var(--my-color);
+    background-color: var(--my-green-color);
+}
+
+/* --------------------- En tête de la page --------------------- */
+
+
+#header_accueil {
+    background-color: black;
+}
+
+nav {
+    top: 25%;
+    height: 50%;
+    display: flex;
+    color: var(--my-color);
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 1rem;
+}
+
+ul>li:first-child a {
+    opacity: .6;
+    color: var(--my-green-color);
+}
+
+ul>li:first-child a:hover {
+    opacity: 1;
+    color: var(--my-green-color);
+}
+
+a {
+    color: var(--my-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--my-green-color);
+}
+
+/* --------------------- Le corps de la page --------------------- */
+
+/* --------------------- Section accueil de la page --------------------- */
+
+#accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#accueil>div:first-child {
+    font-size: xx-large;
+    width: 57%;
+    height: 50%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.conteneur_bouton_mes_projets {
+    top: 8%;
+    width: 100%;
+    height: 24%;
+}
+
+.btn_mes_projets {
+    border: none;
+    border-radius: 8px;
+    width: 37%;
+    height: 100%;
+    font-size: x-large;
+}
+
+.btn_mes_projets a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    align-content: center;
+}
+
+.btn_mes_projets a:hover {
+    color: var(--my-color);
+}
+
+#image_d_accueil {
+    top: 6%;
+    height: 60vh;
+    width: 30vw;
+}
+
+
+/* --------------------- Section À propos de la page --------------------- */
+
+.conteneur_profil_image {
+    float: right;
+    top: 5%;
+    right: 10%;
+    width: 20%;
+    height: 50%;
+    border: 5px solid var(--my-green-color);
+    border-radius: 50%;
+}
+
+#profil_image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#aPropos>div:last-child {
+    top: 15%;
+    left: 5%;
+    width: 60%;
+    height: 55%;
+    text-align: left;
+    font-size: var(--my-font-size);
+}
+
+.conteneur_information_personnel>p {
+    margin-bottom: 3%;
+    line-height: 1.5;
+}
+
+.conteneur_information_personnel>p:nth-child(3) {
+    margin-bottom: 1%;
+}
+
+.conteneur_information_personnel>div {
+    width: 100%;
+    height: 22%;
+}
+
+.download_button {
+    width: 36%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.download_button a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    text-decoration: none;
+    align-content: center;
+}
+
+.download_button a:hover {
+    color: var(--my-color);
+}
+
+/* --------------------- Section Mes Projets de la page --------------------- */
+
+#header_mes_projets {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#section_mes_projets {
+    display: flex;
+    align-items: center;
+}
+
+#section_mes_projets>div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#section_mes_projets>div:first-child>div {
+    height: 15rem;
+    width: 23rem;
+    border-radius: 20px;
+    background-color: #aaa2a221;
+}
+
+#section_mes_projets>div p {
+    display: flex;
+    text-align: center;
+    margin: 3rem 2.5rem 0 2.5rem;
+    justify-content: space-evenly;
+}
+
+#section_mes_projets>div p+p {
+    margin-bottom: 1rem;
+}
+
+#section_mes_projets>div>div>button {
+    left: 8rem;
+    width: 30%;
+    height: 2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--my-green-color);
+}
+
+#section_mes_projets>div>div>button>a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    color: var(--my-color);
+    text-decoration: none;
+    font-size: var(--my-font-size);
+    font-weight: var(--my-font-weight);
+}
+
+/* --------------------- Section Mes Compétenses de la page --------------------- */
+
+#header_aPropos,
+#aPropos,
+#header_mes_competences,
+#section_mes_competenses {
+    background-color: #f6f4f4;
+}
+
+#section_mes_competenses>div:first-child {
+    display: flex;
+    height: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteneur_competences {
+    display: grid;
+    height: 14rem;
+    width: 36%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.conteneur_competences>p {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-weight: var(--my-font-weight);
+}
+
+.conteneur_competences>p+div {
+    height: 78%;
+    display: grid;
+    margin: 0 6rem 0 2rem;
+}
+
+.conteneur_competences>p+div>label {
+    align-content: flex-end;
+}
+
+.progression {
+    width: 100%;
+    height: .6rem;
+    border-radius: 25px;
+    background-color: gainsboro;
+}
+
+.projet {
+    width: 75%;
+    height: .6rem;
+    border-radius: 5px;
+    background-color: var(--my-green-color);
+}
+
+.probleme {
+    width: 60%;
+    height: .6rem;
+    border-radius: 5px;
+    background-color: var(--my-green-color);
+}
+
+.adaptabilite {
+    width: 84%;
+    height: .6rem;
+    border-radius: 5px;
+    background-color: var(--my-green-color);
+}
+
+.html {
+    width: 94%;
+    height: .6rem;
+    border-radius: 5px;
+    background-color: var(--my-green-color);
+}
+
+.css {
+    width: 66%;
+    height: .6rem;
+    border-radius: 5px;
+    background-color: var(--my-green-color);
+}
+
+.javascript {
+    width: 81%;
+    height: .6rem;
+    border-radius: 5px;
+    background-color: var(--my-green-color);
+}
+
+.vscode {
+    width: 97%;
+    height: .6rem;
+    border-radius: 5px;
+    background-color: var(--my-green-color);
+}
+
+/* --------------------- Section contact de la page --------------------- */
+
+#section_contact {
+    height: 99.6vh;
+    display: grid;
+    justify-items: center;
+    color: var(--my-color);
+    background-color: black;
+}
+
+#section_contact>div:first-child {
+    width: 40%;
+    height: 100%;
+}
+
+.conteneur_contact {
+    top: 5%;
+    height: 15%;
+    width: 100%;
+}
+
+.conteneur_contact>p {
+    width: 100%;
+    height: 50%;
+}
+
+.conteneur_contact>p:first-child {
+    font-weight: 700;
+    font-size: xx-large;
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteneur_contact>p:nth-child(2) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+form {
+    top: 10%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form>div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nom_prenom>div {
+    width: 46%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label {
+    width: 100%;
+    align-content: center;
+}
+
+.label+input {
+    height: 49%;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px groove var(--my-green-color);
+}
+
+form>input:focus {
+    border-radius: .5rem;
+    border: 1px groove var(--my-green-color);
+}
+
+.nom_prenom+.sujet {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sujet>label {
+    width: 100%;
+    align-content: flex-end;
+}
+
+.sujet>input {
+    height: 51%;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px groove var(--my-green-color);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 40%;
+    resize: none;
+    border: .5px groove var(--my-green-color);
+    border-radius: 0.5rem;
+    margin-top: 2%;
+}
+
+textarea+input {
+    top: -4%;
+    left: 35%;
+    width: 30%;
+    height: 10%;
+    border: 1px solid white;
+    border-radius: .4rem;
+    color: var(--my-color);
+    font-size: larger;
+    font-weight: 700;
+    background-color: var(--my-green-color);
+}
+
+/* --------------------- En footer de la page --------------------- */
+
+footer {
+    height: 10vh;
+    display: flex;
+    margin: 0 7% 0 4%;
+    align-items: center;
+    justify-content: space-between;
+}
